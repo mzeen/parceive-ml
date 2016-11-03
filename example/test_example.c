@@ -26,9 +26,9 @@ void do_work(int weight){
 
 int main(int argc, char *argv[]){
 
-    struct timespec begin, end;
+//    struct timespec begin, end;
 
-    clock_gettime(CLOCK_MONOTONIC, &begin);
+//    clock_gettime(CLOCK_MONOTONIC, &begin);
 
 
     if ( argc != 4 ) /* argc should be 3 for correct execution */
@@ -51,7 +51,7 @@ int main(int argc, char *argv[]){
     }
     free(data);
     //printf("\nResult %ld", super_dummy);
-    clock_gettime(CLOCK_MONOTONIC, &end);
-    printf("%.5f ", ((double)end.tv_sec + 1.0e-9*end.tv_nsec) -
-                     ((double)begin.tv_sec + 1.0e-9*begin.tv_nsec));
+ //   clock_gettime(CLOCK_MONOTONIC, &end);
+ //   printf("%.5f ", ((double)end.tv_sec + 1.0e-9*end.tv_nsec) -
+ //                    ((double)begin.tv_sec + 1.0e-9*begin.tv_nsec));
 }
