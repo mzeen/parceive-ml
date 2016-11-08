@@ -1,0 +1,5 @@
+<filter>
+	<image>
+		<include>.*test_example.*</include>
+	</image>
+</filter>

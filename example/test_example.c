@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "time.h"
+#include <unistd.h>
 
 int base_weight;
 long super_dummy = 0;
@@ -17,9 +18,10 @@ void gen_data(int *data, int variance, int n){
 
 void do_work(int weight){
   
-    int dummy = 0, i; 
+    /*int dummy = 0, i; 
     for(i = 0; i < weight*weight; i++)
-        dummy += i; 
+        dummy += i;*/
+    usleep(weight*weight);
    
     //super_dummy += dummy;  
 }
